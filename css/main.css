@@ -493,7 +493,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .icon-header-noti::after {
   content: attr(data-notify);
   font-family: Poppins-Regular;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   line-height: 15px;
   text-align: center;
@@ -502,14 +502,14 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   top: -7px;
   right: 0;
   min-width: 15px;
-  height: 15px;
-  padding: 0 3px;
+  /* height: 15px; */
+  padding: 10px;
   background: #c00;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
@@ -937,6 +937,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   top: 0;
   right: -400px;
   background-color: #fff;
+
+  /* padding: 5px 5px 5px 15px; */
   
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
