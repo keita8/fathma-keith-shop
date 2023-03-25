@@ -119,6 +119,20 @@ textarea{
 }
 
 
+a:is(:focus, :hover, :focus-visible){
+  color: #000;
+}
+
+
+.hov-btn3:is(:focus, :hover, :focus-visible){
+  color: transparent;
+}
+
+
+.table_head{
+  text-align: center;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ LOADDING ]*/
 .animsition-loading-1 {
