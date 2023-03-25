@@ -311,7 +311,19 @@ textarea{
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: transparent; 
+}
+
+.limiter-menu-desktop3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  /* background-color: transparent; */
 }
 
 
@@ -3262,6 +3274,20 @@ input.num-product::-webkit-inner-spin-button {
   }
 
 }
+
+
+
+.main-menu-m  > li > a{
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 /*//////////////////////////////////////////////////////////////////

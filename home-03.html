@@ -86,16 +86,20 @@
 					<!-- Icon header -->
 				
 					<div class="wrap-icon-header flex-w flex-r-m h-full">							
+
+
+						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search" style="color: white;">
+							<ion-icon name="search-outline"></ion-icon>
+						</div>
+
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="9">
-							<!-- <i class="zmdi zmdi-shopping-cart"></i> -->
-							<!-- <ion-icon name="bag-outline"></ion-icon> -->
 							<ion-icon name="bag-handle-outline" style="color: white;"></ion-icon>
 						</div>
 
 							
 						<div class="flex-c-m h-full p-lr-19">
 							<div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
-								<i class="zmdi zmdi-menu"></i>
+								<ion-icon name="person-outline"></ion-icon>
 							</div>
 						</div>
 					</div> 
@@ -107,12 +111,19 @@
 		<div class="wrap-header-mobile">
 			<!-- Logo moblie -->		
 			<div class="logo-mobile">
-				<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+				<a href="index.html">
+					<img src="images/amazon.png" loading="lazy" width="100" height="100" alt="IMG-LOGO">
+				</a>
 			</div>
 
 			<!-- Icon header -->
 			<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
 				<div class="flex-c-m h-full p-r-5">
+
+					<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search" style="color: white;">
+						<ion-icon name="search-outline"></ion-icon>
+					</div>
+
 					<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
 						<!-- <i class="zmdi zmdi-shopping-cart"></i> -->
 						<!-- <ion-icon name="bag-outline"></ion-icon> -->
@@ -168,20 +179,23 @@
 		</div>
 
 		<!-- Modal Search -->
+		<!-- Modal Search -->
 		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
-			<button class="flex-c-m btn-hide-modal-search trans-04">
-				<i class="zmdi zmdi-close"></i>
-			</button>
+			<div class="container-search-header">
+				<!-- <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+					<img src="images/icons/icon-close2.png" alt="CLOSE" loading="lazy">
+				</button> -->
 
-			<form class="container-search-header">
-				<div class="wrap-search-header">
-					<input class="plh0" type="text" name="search" placeholder="Search...">
+				<form class="wrap-search-header flex-w p-l-15">
+					
+					<input class="plh3" type="search" name="q" value="" placeholder="Cherchez un article..." required>
 
-					<button class="flex-c-m trans-04">
-						<i class="zmdi zmdi-search"></i>
+					<button class="flex-c-m trans-04" type="submit">
+						<!-- <i class="zmdi zmdi-search"></i> -->
+						<ion-icon name="search-outline"></ion-icon>
 					</button>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	</header>
 
@@ -619,14 +633,14 @@
 		<div class="container">
 			<div class="p-b-10">
 				<h3 class="ltext-103 cl5">
-					Product Overview
+					Tendance
 				</h3>
 			</div>
 
 			<div class="flex-w flex-sb-m p-b-52">
 				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-						All Products
+						Tous les articles
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
@@ -865,11 +879,12 @@
 				</div>
 			</div>
 
+
 			<div class="row isotope-grid">
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
 					<!-- Block2 -->
 					<div class="block2">
-						<div class="block2-pic hov-img0 label-new" data-label="New">
+						<div class="block2-pic hov-img0">
 							<img src="images/product-01.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -1379,8 +1394,15 @@
 				</div>
 			</div>
 
+			<!-- Load more -->
+			<div class="flex-c-m flex-w w-full p-t-45">
+				<a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
+					Load More
+				</a>
+			</div>
+
 			<!-- Pagination -->
-			<div class="flex-c-m flex-w w-full p-t-38">
+			<!-- <div class="flex-c-m flex-w w-full p-t-38">
 				<a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7 active-pagination1">
 					1
 				</a>
@@ -1388,7 +1410,7 @@
 				<a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7">
 					2
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -1530,7 +1552,7 @@
 
 				<p class="stext-107 cl6 txt-center">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+Copyright &copy; 2023 tous les droits sont reservés.
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
 				</p>
@@ -1758,7 +1780,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		$('.js-addwish-b2').each(function(){
 			var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+				swal(nameProduct, "a été ajouté dans votre liste de souhait !", "success");
 
 				$(this).addClass('js-addedwish-b2');
 				$(this).off('click');
@@ -1769,7 +1791,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
 
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+				swal(nameProduct, "a été ajouté dans votre liste de souhait !", "success");
 
 				$(this).addClass('js-addedwish-detail');
 				$(this).off('click');
@@ -1781,7 +1803,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		$('.js-addcart-detail').each(function(){
 			var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
+				swal(nameProduct, "a été ajouté dans votre panier !", "success");
 			});
 		});
 	</script>
